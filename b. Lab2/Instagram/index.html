@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+
+    <style>
+
+        body {
+            padding: 0;
+            margin: 0;
+            background: #fafafa;
+            font-family: Arial, sans-serif;
+        }
+
+        .wrap a {
+            text-decoration: none;
+        }
+
+        .wrap {
+            border-radius: 1px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px 0;
+            /*box-sizing: border-box;*/
+            /*flex-shrink: 0;*/
+            /*font: inherit;*/
+            /*font-size: 100%;*/
+            /*margin: 0 0 10px;*/
+            /*position: relative;*/
+            /*vertical-align: baseline;*/
+        }
+
+        .wrap p{
+            text-align: center;
+        }
+
+        .log-pass {
+            width: 350px;
+            text-align: center;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 1px;
+            box-size: border-box;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            font: inherit;
+            font-size: 100%;
+            margin: 0 0 10px;
+            padding: 10px 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+
+        .log-pass input {
+            width: 100%;
+            padding: 15px 60px;
+            margin: 10px 0;
+            font-size: 15px;
+            box-sizing: border-box;
+            border: 1px solid #e9e9e9;
+            border-radius: 5px;
+            display: block;
+            text-align: left;
+        }
+
+        .Log-in {
+            color: white;
+            font-size: 10px;
+            background-color: #4db5f9;
+            padding: 20px 20px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .log-pass a {
+            display: block;
+            padding: 5px;
+            font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #385185;
+            margin: 10px;
+        }
+
+        .log-pass button {
+            width: 100%;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 5px;
+            border: 1px solid #4db5f9;
+        }
+
+        .instagram-logo {
+            padding-top: 30px;
+            /*background-image: url(https://static.cdninstagram.com/rsrc.php/v3/yr/r/NL0hPV-L09m.png);*/
+            background-position: 0px 0px;
+            background-size: 176px 186px;
+            width: 174px;
+            height: 50px;
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+
+        .dont-have-acc {
+            width: 350px;
+            text-align: center;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 1px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            font: inherit;
+            font-size: 100%;
+            margin: 0 0 10px;
+            padding: 10px 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        .dont-have-acc p {
+            display: block;
+            padding: 5px;
+            color: #385185;
+            margin: 20px 0px;
+        }
+
+        #Google-play{
+            width: auto;
+            height: 40px;
+        }
+        #Microsoft{
+            width: auto;
+            height: 40px;
+        }
+
+        .bottom{
+            bottom: 0px;
+            position: absolute;
+
+        }
+
+        .subbottom{
+            color: #8e8e8e;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+            margin-left: 350px;
+
+            font-size: ;
+        }
+
+        .bottom a{
+            color: #8e8e8e;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+
+    <div class="log-pass">
+
+        <div class="instagram-logo">
+            <i data-visualcompletion="css-img" aria-label="Instagram" class="" role="img"
+               style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/yr/r/NL0hPV-L09m.png&quot;); background-position: 0px 0px; background-size: 176px 186px; width: 174px; height: 50px; background-repeat: no-repeat; display: inline-block;"></i>
+        </div>
+        <form action="#">
+            <input type="text" placeholder="Telephone number, username or email">
+            <input type="password" placeholder=Password>
+            <button class="Log-in" type="submit">Log in</button>
+            <hr>
+            <a href="#"><b>Log in with Facebook</b></a>
+            <a href="#">Forgot password?</a>
+        </form>
+    </div>
+
+    <div class="dont-have-acc">
+        <p>Don't have an account? <a href="#">Sign up</a></p></div>
+
+    <div>
+        <p>Get the app.</p>
+        <img id="Google-play" src="./img/Google%20Play.png" alt="Google play">
+        <img id="Microsoft" src="./img/microsoft.png" alt="Microsoft">
+    </div>
+</div>
+
+<div class="bottom">
+    <div class="subbottom">
+        <a href="#">Meta</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Jobs</a>
+        <a href="#">Help</a>
+        <a href="#">API</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Top Accounts</a>
+        <a href="#">Locations</a>
+        <a href="#">Instagram Lite</a>
+        <a href="#">Contact Uploading & Non-Users</a>
+    </div>
+
+</div>
+
+</body>
+</html>
