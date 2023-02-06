@@ -20,7 +20,6 @@
         .wrap {
             border-radius: 1px;
             display: flex;
-
             justify-content: center;
             align-content: center;
             align-items: center;
@@ -38,41 +37,6 @@
         .wrap p{
             text-align: center;
         }
-
-        .slideshow {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 500px;
-            animation: slide 9s infinite;
-        }
-
-        .slide {
-            position: absolute;
-            width: 200px;
-            height: auto;
-            animation: show 3s ease-in-out forwards;
-        }
-
-        .slide:nth-child(1) {
-            animation-delay: 0s;
-        }
-        .slide:nth-child(2) {
-            animation-delay: 3s;
-        }
-        .slide:nth-child(3) {
-            animation-delay: 6s;
-        }
-
-        @keyframes show {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
 
         .log-pass {
             width: 350px;
@@ -93,9 +57,6 @@
             vertical-align: baseline;
         }
 
-        .log-pass, .slideshow{
-            display: block;
-        }
 
         .log-pass input {
             width: 100%;
@@ -212,23 +173,6 @@
 <body>
 
 <div class="wrap">
-
-
-    <div class="two-iphones">
-
-        <div class="bottom-iphone">
-
-        </div>
-
-        <div class="slideshow">
-            <img class="slide" src="./img/screenshot1.png">
-            <img class="slide" src="./img/screenshot2.png">
-            <img class="slide" src="./img/screenshot3.png">
-            <img class="slide" src="./img/screenshot4.png">
-
-        </div>
-    </div>
-
 
     <div class="log-pass">
 

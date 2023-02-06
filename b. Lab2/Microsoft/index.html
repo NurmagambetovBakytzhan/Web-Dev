@@ -3,36 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <title>Microsoft</title>
+    <style>
+
+        body{
+            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+        .wrap {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .actions{
+            margin:0 84px 0 84px;
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .actions img{
+            height: 23px;
+            width: auto;
+        }
+
+        .actions .first-subdiv {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            margin-bottom: 0;
+        }
+
+        .first-subdiv img {
+            height: 20px;
+            width: auto;
+        }
+
+        .first-subdiv{
+
+        }
+
+        .first-subdiv a{
+            text-decoration: none;
+            margin-left: 30px;
+            color: rgb(38,38,38);
+            font-size: 13px;
+        }
+
+        .actions .second-subdiv {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .Icon {
+            height: 48px;
+            width: auto;
+        }
+
+        #card-material {
+            width: auto;
+            height: 450px;
+            background-image: url("img/Highlight-Surface-Pro-9-Type-Cover-Sapphire-Forest_VP5-1920x600.jpg");
+            margin-left: -10px;
+            margin-right: -10px;
+            padding: 150px 0 0 150px;
+        }
+
+        .text-box {
+            height: 244px;
+            width: auto;
+        }
+
+        .text-box h {
+            display: inline-block;
+            width: auto;
+        }
+
+        .text-box p {
+            display: inline-block;
+            width: auto;
+        }
+
+        #layout-container {
+            width: 100%;
+            justify-content: center;
+            display: flex;
+        }
+
+        #layout-container div{
+            width: 60%
+            margin-left: 18px;
+        }
+
+        #layout-container img{
+            width: 360px;
+            margin-top: 80px;
+        }
+
+        #layout-container a{
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            color: rgb(0, 103, 184);
+        }
+
+        #layout-container a:hover{
+            text-decoration: underline;
+        }
+
+        #layout-container .card-body{
+            flex: 1 1 auto;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+
+    </style>
 </head>
 <body>
 
-<div class="Top">
+<div class="wrap">
 
-    <a href="#">
-        <img class="Microsoft-logo" src="./img/Microsoft-lpgppng.png" alt="Microsoft-logo">
-    </a>
 
     <div class="actions">
 
         <div class="first-subdiv">
-            <a href="#">Microsoft 365</a>
-            <a href="#">Office</a>
-            <a href="Windows"></a>
-            <a href="Support"></a>
-        </div>
-
-        <button role="button">All-Microsoft</button>
-
-        <div class="Search-logo">
-            <a href="#">🔍</a>
-        </div>
-
-        <a href="#">🛒</a>
-        <a href="#">Sign in</a>
-        <div class="top-header">
             <a href="#">
-                <img class="Icon" src="./img/Icons.jpg" alt="">
+                <img class="Microsoft-logo" src="./img/Microsoft-lpgppng.png" alt="Microsoft-logo">
             </a>
+            <a href="#">Microsoft 365</a>
+            <a href="#">Teams</a>
+            <a href="#">Windows</a>
+            <a href="#">Surface</a>
+            <a href="#">Xbox</a>
+            <a href="#">Deals</a>
+            <a href="#">Small Business</a>
+            <a href="#">Support</a>
+        </div>
+
+
+
+
+    </div>
+
+    <div id="card-material">
+        <div class="text-box">
+
+            <h1>Save up to £110 on Surface Pro 9 devices</h1>
+
+
+            <p>Surface Pro 9 gives you the tablet flexibility you want and the laptop performance and battery life² you
+                need to move through your day — all in one ultra-portable device.</p>
+
+
+            <div class="link-group">
+                <a id="first-button" href="#">Shop Surface Pro 9</a>
+                <a id="second-button" href="#">Shop all deals</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="layout-container">
+        <div id="first">
+            <img src="./img/first-image.webp" alt="first">
+            <div class="card-body">
+
+                <h2>Save up to £90 on Surface Laptop 5</h2>
+                <p>Sleek portability and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.</p>
+                <div class="link-group">
+                    <a href="#">Show now</a>
+                </div>
+            </div>
+        </div>
+        <div id="second">
+            <img src="./img/second-image.webp" alt="second">
+            <div class="card-body">
+
+                <h2>Microsoft 365</h2>
+                <p>Apps and features to help you turn ideas into reality, stay safer and focus on the important things
+                    in
+                    life.</p>
+                <div class="link-group">
+                    <a href="#">For one person</a>
+                    <a href="#">For up to six people</a>
+                </div>
+            </div>
+        </div>
+        <div id="third">
+            <img src="./img/third-image.avif" alt="third">
+            <div class="card-body">
+
+                <h2>Reimagine Education</h2>
+                <p>Unlock the full potential of every student. Join us for a digital event on February 9 at 5 PM GMT or
+                    February 10th at 2 AM GMT.</p>
+                <div class="link-group">
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div id="fourth">
+            <img src="./img/fourth-imge.webp" alt="fourth">
+
+            <div class="card-body">
+                <h2>Next-level control</h2>
+                <p>Elevate your game with the Xbox Wireless Controller – Deep Pink.</p>
+                <div class="link-group">
+                    <a href="#">Show now</a>
+                </div>
+            </div>
         </div>
     </div>
 
