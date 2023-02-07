@@ -20,6 +20,8 @@
             display: flex;
         }
 
+
+
         .actions img{
             height: 23px;
             width: auto;
@@ -44,15 +46,10 @@
             font-size: 13px;
         }
 
-        .actions .second-subdiv {
-            display: flex;
-            justify-content: flex-end;
+        .first-subdiv a:hover{
+            border-bottom: 2px solid black;
         }
 
-        .Icon {
-            height: 48px;
-            width: auto;
-        }
 
         #card-material {
             width: auto;
@@ -70,14 +67,14 @@
 
         .text-box h1 {
             display: block;
-            width: auto;
+            width: 30%;
             font-size: 2em;
             font-weight: bold;
         }
 
-        .text-box p {
-            display: inline-block;
-            width: auto;
+        #card-material p {
+            width: 40%;
+            overflow-wrap: break-word;
         }
 
         .text-box a{
@@ -94,23 +91,27 @@
             font-weight: bold;
         }
 
+        .text-box #second-button:hover{
+            border-bottom: 2px solid #0067b8;
+        }
+
         .text-box #second-button{
             display: inline-block;
-            padding: 10px;
+            margin-left: 1%;
+
             color: #0067b8;
             font-weight: bold;
         }
 
+        .text-box #first-button:hover{
+            background-color: #005da5;
+        }
         #layout-container {
             width: 100%;
             justify-content: center;
             display: flex;
         }
 
-        #layout-container div{
-            width: 60%
-            margin-left: 18px;
-        }
 
         #layout-container img{
             width: 360px;
@@ -119,7 +120,6 @@
 
         #layout-container a{
             text-decoration: none;
-            font-size: 37px
             font-weight: 600;
             color: rgb(0, 103, 184);
         }
@@ -129,11 +129,18 @@
         }
 
         #layout-container .card-body{
-            flex: 1 1 auto;
+            display: block;
+            text-align: left;
             position: relative;
             box-sizing: border-box;
+            width: 80%;
+            margin-left: 10px;
         }
+        #layout-container a{
+            display: block;
+            margin-top: 10px;
 
+        }
 
     </style>
 </head>
