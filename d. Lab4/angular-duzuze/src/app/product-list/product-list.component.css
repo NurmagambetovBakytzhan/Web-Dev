@@ -2,11 +2,13 @@ h2 {
     color: darkgrey;
     font-weight: normal;
     font-size: 40px;
+
 }
 
 .products-list {
     /*display: flex;*/
     color: #1d7ae4;
+
 }
 
 .products-list a:hover  {
