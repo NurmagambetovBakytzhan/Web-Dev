@@ -6,8 +6,9 @@ h2 {
 }
 
 .products-list {
-    /*display: flex;*/
+    display: flex;
     color: #1d7ae4;
+
 
 }
 
