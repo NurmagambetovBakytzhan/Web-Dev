@@ -8,17 +8,22 @@
 </head>
 
 <h2>Products</h2>
+
+
 <div class="products-list">
   <div *ngFor="let product of products" class="products-list-tovars">
     <h3>
-      <a [title]="product.name + ' details'" [href]="product.url" target="_blank">
+      <a [title]="product.name + ' details'"
+        [routerLink]="['/products', product.id]">
         {{ product.name }}
       </a>
     </h3>
 
     <p *ngIf="product.description">Description: {{ product.description }}</p>
 
-    <img [src]="product.img" alt="{{  product.img  }} image" width=20%>
+    <a [href]="product.url" target="_blank" >
+      <img [src]="product.img" alt="{{  product.img  }} image" width=150px height="200px">
+    </a>
 
     <button type="button" (click)="share(product)">Share</button>
 

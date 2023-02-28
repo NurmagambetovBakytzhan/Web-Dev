@@ -12,6 +12,12 @@ import { Product } from "../products";
 export class ProductListComponent {
   products = products;
 
+  productsArray: Product[] = []; // default value to satisfy TypeScript
+
+  constructor() {
+    this.products = products; // assign value in constructor
+  }
+
 
   share(product: Product) {
     const shareUrl = encodeURIComponent(product.url);
@@ -24,6 +30,10 @@ export class ProductListComponent {
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }
+
+
+
+
 }
 
 
