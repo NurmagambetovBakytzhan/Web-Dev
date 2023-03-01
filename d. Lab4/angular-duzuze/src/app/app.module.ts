@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
+
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
@@ -12,10 +13,6 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { ProductItemComponent } from './product-item/product-item.component';
-import { CategoriesComponent } from './categories/categories.component';
-
-import { CategoryProductsComponent } from './category-products/category-products.component';
-import {Categories} from "./categories";
 
 
 @NgModule({
@@ -24,8 +21,7 @@ import {Categories} from "./categories";
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: CategoriesComponent },
-      {path:'category/:categoryId/products', component: CategoryProductsComponent},
+      { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       {path: 'products', component: ProductListComponent},
       { path: 'cart', component: CartComponent },
@@ -41,8 +37,6 @@ import {Categories} from "./categories";
     CartComponent,
     ShippingComponent,
     ProductItemComponent,
-    CategoriesComponent,
-    CategoryProductsComponent
   ],
   bootstrap: [
     AppComponent

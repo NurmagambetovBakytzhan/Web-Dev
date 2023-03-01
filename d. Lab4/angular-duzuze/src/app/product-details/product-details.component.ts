@@ -32,17 +32,5 @@ export class  ProductDetailsComponent implements OnInit  {
     window.alert('Your product has been added to the cart!');
   }
 
-  deleteProduct(product: Product){
-
-    const index = products.findIndex(p => p.id === product.id);
-    if (index !== -1) {
-      products.splice(index, 1);
-      this.location.back();
-    }
-  }
-
-  likeProduct(product: Product){
-    product.likes++;
-  }
 
 }
