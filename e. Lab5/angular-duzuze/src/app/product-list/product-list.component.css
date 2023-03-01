@@ -1,0 +1,47 @@
+h2 {
+    color: darkgrey;
+    font-weight: normal;
+    font-size: 40px;
+
+}
+
+.products-list {
+    display: flex;
+    color: #1d7ae4;
+
+
+}
+
+.products-list a:hover  {
+
+}
+
+.products-list h3 {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.products-list p {
+    color: darkgrey;
+    font-size: 18px;
+}
+
+.share-btn {
+    cursor: pointer;
+    background-color: #1d7ae4;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 20px 8px 20px;
+    font-size: 15px;
+}
+
+.share-btn:hover {
+    background-color: dodgerblue;
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
