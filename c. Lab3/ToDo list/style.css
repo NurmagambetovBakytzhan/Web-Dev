@@ -110,6 +110,7 @@ li{
 }
 li .deleteButton{
     margin-left: auto;
+    /*background-color: red;*/
 }
 li button{
     float: right;

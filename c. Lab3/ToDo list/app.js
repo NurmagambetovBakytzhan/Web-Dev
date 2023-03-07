@@ -5,7 +5,7 @@ function addItem() {
         var listItem = document.createElement("li");
         var checkbox = document.createElement("input");
         checkbox.type = "checkbox";
-        checkbox.onchange = function() {
+        checkbox.onchange = function () {
             if (this.checked) {
                 text.style.textDecoration = "line-through";
             } else {
@@ -23,7 +23,7 @@ function addItem() {
         var iconSpan = document.createElement("span");
         iconSpan.className = "fas fa-trash";
         deleteButton.appendChild(iconSpan);
-        deleteButton.onclick = function() {
+        deleteButton.onclick = function () {
             this.parentNode.parentNode.removeChild(this.parentNode);
         };
         listItem.appendChild(deleteButton);
