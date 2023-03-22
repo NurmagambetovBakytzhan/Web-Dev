@@ -4,12 +4,13 @@ import {ActivatedRoute} from "@angular/router";
 import {Observable} from "rxjs";
 import {AlbumService} from "../album.service";
 import {Location} from "@angular/common";
+
 @Component({
   selector: 'app-album-photos',
   templateUrl: './album-photos.component.html',
   styleUrls: ['./album-photos.component.css']
 })
-export class AlbumPhotosComponent implements OnInit{
+export class AlbumPhotosComponent implements OnInit {
 
   album!: Album;
 
@@ -47,7 +48,7 @@ export class AlbumPhotosComponent implements OnInit{
     });
   }
 
-  returnBack(){
+  returnBack() {
     this.location.back();
   }
 }

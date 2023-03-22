@@ -19,7 +19,7 @@ export interface Product {
 
 }
 
-export const products = [
+export const products  : Product[] = [
   {
     id: 1,
     name: 'iPhone X',
