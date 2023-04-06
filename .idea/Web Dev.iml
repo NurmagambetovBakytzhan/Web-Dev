@@ -6,6 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/h. Lab8/shop-back/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/i. Lab9/hh-back/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.11" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

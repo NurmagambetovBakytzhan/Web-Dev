@@ -25,8 +25,35 @@ class CategoryViewSet(ModelViewSet):
 
 @api_view(['GET'])
 def get_product_by_category_id(request, *args, **kwargs):
-
     category = models.Category.objects.get(**kwargs)
-    products = category.products.all()
+    products = category.objects.all()
     serializer = serializers.ProductModelSerializer(products, many=True).data
     return Response(serializer)
+
+# def get_categories(request, *args, **kwargs):
+#     categories = models.Category.objects.all()
+#     cats_json = [c.to_json() for c in categories]
+#
+#     return Response(serializer)
+#
+#
+# def get_category(request, *args, **kwargs):
+#     category = models.Category.objects.get(id=kwargs['id'])
+#     serializer = serializers.serializers.CategoryModelSerializer
+#
+#     return Response(serializer)
+#
+#
+#
+# def get_products(request, *args, **kwargs):
+#     products = models.Product.objects.all()
+#     serializer = serializers.ProductModelSerializer
+#
+#     return Response(serializer, many= True)
+#
+#
+# def get_product(request, *args, **kwargs):
+#     product = models.Product.objects.get(id=kwargs['id'])
+#     serializer = serializers.ProductModelSerializer
+#
+#     return Response(serializer)

@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="781fc590-e6fc-4307-9b0b-dfd8100420da" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../i. Lab9/hh-back/api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/Web Dev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/Web Dev.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shop-back.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shop-back.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +39,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Чингиз/Desktop/Web-Dev/i. Lab9",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.django.DjangoModulesConfigurable",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -80,7 +86,17 @@
       <option name="presentableId" value="Default" />
       <updated>1680280225948</updated>
       <workItem from="1680280229018" duration="3000" />
-      <workItem from="1680280308670" duration="1097000" />
+      <workItem from="1680280308670" duration="1934000" />
+      <workItem from="1680295196960" duration="591000" />
+      <workItem from="1680332295399" duration="26000" />
+      <workItem from="1680514999762" duration="611000" />
+      <workItem from="1680556327045" duration="7000" />
+      <workItem from="1680678902873" duration="91000" />
+      <workItem from="1680679119255" duration="1325000" />
+      <workItem from="1680754746418" duration="628000" />
+      <workItem from="1680760308505" duration="2857000" />
+      <workItem from="1680771700223" duration="3342000" />
+      <workItem from="1680805167091" duration="2696000" />
     </task>
     <servers />
   </component>
