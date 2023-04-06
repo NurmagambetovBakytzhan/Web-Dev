@@ -10,4 +10,4 @@ urlpatterns = router.urls
 
 
 urlpatterns.append(path(r'companies/<int:pk>/vacancies/', views.get_vacancy_by_company_id))
-urlpatterns.append(path(r'vacancies/top_ten/', views.get_top_ten_vacancies))
+# urlpatterns.append(path(r'vacancies/top_ten/', views.get_top_ten_vacancies))

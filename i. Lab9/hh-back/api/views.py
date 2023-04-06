@@ -1,6 +1,6 @@
 from django.db.models import Max
 from django.shortcuts import render
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, action
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 from . import models, serializers
@@ -16,6 +16,12 @@ class VacancyViewSet(ModelViewSet):
     queryset = models.Vacancy.objects.all()
     serializer_class = serializers.VacancyModelSerializer
 
+    @action(detail=False, methods=['GET'])
+    def top_ten(self, request):
+        top_ten = self.get_queryset().annotate(max_salary=Max('salary')).order_by('-max_salary')[:10]
+        serializer = serializers.VacancyModelSerializer(top_ten, many=True).data
+        return Response(serializer)
+
 
 @api_view(['GET'])
 def get_vacancy_by_company_id(request, *args, **kwargs):
@@ -24,9 +30,8 @@ def get_vacancy_by_company_id(request, *args, **kwargs):
     serializer = serializers.VacancyModelSerializer(vacancies, many=True).data
     return Response(serializer)
 
-
-@api_view(['GET'])
-def get_top_ten_vacancies(request, *args, **kwargs):
-    top_salaries = models.Vacancy.objects.annotate(max_salary=Max('salary')).order_by('-max_salary')[:10]
-    serializer = serializers.VacancyModelSerializer(top_salaries, many=True).data
-    return Response(serializer)
+# @api_view(['GET'])
+# def get_top_ten_vacancies(request, *args, **kwargs):
+#     top_salaries = models.Vacancy.objects.annotate(max_salary=Max('salary')).order_by('-max_salary')[:10]
+#     serializer = serializers.VacancyModelSerializer(top_salaries, many=True).data
+#     return Response(serializer)
