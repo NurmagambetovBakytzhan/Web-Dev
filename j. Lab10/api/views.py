@@ -32,4 +32,3 @@ class VacancyViewSet(ModelViewSet):
         return Response(serializer)
 
 
-
